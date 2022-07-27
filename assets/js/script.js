@@ -27,22 +27,18 @@ var answerThreeArray = [
     "false",
 ];
 
-//for loops matching questions to answers
-
-for (let i = 0; i <= questionArray.length; i++) {
-    console.log(questionArray[i]);
-    //Do something
-    for (let j = 0; j <= answerOneArray.length; j++) {
-        console.log(answerOneArray[j]);
-    } 
-    for (let k = 0; k <= answerTwoArray.length; k++) {
-        console.log(answerTwoArray[k]);
-    }
-    for (let l = 0; l <= answerThreeArray.length; l++) {
-        console.log(answerThreeArray[l]);
-    }
-  
-} 
+document.getElementById("qOne").textContent = questionArray[0];
+for (let i = 0; i <= answerOneArray.length; i++) {
+    console.log(answerOneArray[i]);
+}
+document.getElementById("qTwo").textContent = questionArray[1];
+for (let j = 0; j <= answerTwoArray.length; j++) {
+    console.log(answerTwoArray[j]);
+}
+document.getElementById("qThree").textContent = questionArray[2];
+for (let k = 0; k <= answerThreeArray.length; k++) {
+    console.log(answerThreeArray[k]);
+}
 
 // correct answer array to compare with user input
 
