@@ -4,7 +4,8 @@
     text-align: centr;
     font-size: larger;
 }
-  
+  /*pasted as starter from UPENN-VIRT-FSF-FT-07-2022-U-LOLC\04-Web-APIs\01-Activities\18-Stu_Event-Bubbling\Solved\index.html
+  will get around to using these to make the quiz move through the questions instead of have them all on one page.*/
 .container {
     display: block;
     margin: 60px auto;
@@ -35,7 +36,7 @@
 .wrapper {
     padding-bottom: 30px;
 }
-
+/* added styling to timer */
 #time {
     font-size: 200%;
     text-align: right;

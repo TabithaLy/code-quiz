@@ -43,6 +43,8 @@ var answerTwoD = document.getElementById("answer-two-d");
 var answerThreeT = document.getElementById("answer-three-t");
 var answerThreeF = document.getElementById("answer-three-f");
 
+// pasted ln 47-69 as starter from UPENN-VIRT-FSF-FT-07-2022-U-LOLC\04-Web-APIs\01-Activities\18-Stu_Event-Bubbling\Solved\index.html
+// haven't  really used it yet
 var carousel = document.querySelector(".carousel-box");
 var answer = carousel.querySelector(".answer");
 var index = 0;
