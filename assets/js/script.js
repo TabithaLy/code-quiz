@@ -1,10 +1,10 @@
 // carousel quiz
-
+// var answer = querySelectorAll(".answer");
 // question array
 var questionArray = [
     "Commonly used data types do not include?",
     "String values must be enclosed in:",
-    "An if statement must always be followed by and else in JavaScript."
+    "An if statement must always be followed by and else in JavaScript.",
 ];
 // possible answer array variable
 
@@ -12,27 +12,37 @@ var answerOneArray = [
     "strings",
     "booleans",
     "alerts",
-    "numbers"
+    "numbers",
 ];
 
 var answerTwoArray = [
     "double or single quotation marks",
     "angle brackets",
     "curly braces",
-    "strings can just be written as they are without being enclosed in anything"
+    "strings can just be written as they are without being enclosed in anything",
 ];
 
 var answerThreeArray = [
     "true",
-    "false"
+    "false",
 ];
 
-//for loops going through correct answers
+//for loops matching questions to answers
 
-for (var i = 0; i < answerOneArray.length; i++) {
-    console.log(answerOneArray[i]);
+for (let i = 0; i <= questionArray.length; i++) {
+    console.log(questionArray[i]);
     //Do something
-}
+    for (let j = 0; j <= answerOneArray.length; j++) {
+        console.log(answerOneArray[j]);
+    } 
+    for (let k = 0; k <= answerTwoArray.length; k++) {
+        console.log(answerTwoArray[k]);
+    }
+    for (let l = 0; l <= answerThreeArray.length; l++) {
+        console.log(answerThreeArray[l]);
+    }
+  
+} 
 
 // correct answer array to compare with user input
 
