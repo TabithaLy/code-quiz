@@ -25,7 +25,7 @@ body {
     padding-bottom: 40px;
 }
   
-
+ /* changed prev and next buttons to answer buttons, adjusted font size */
 .answer {
     text-align: center;
     font-size: 100%;

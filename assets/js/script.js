@@ -6,26 +6,34 @@ var questionArray = [
     "String values must be enclosed in:",
     "An if statement must always be followed by and else in JavaScript."
 ];
-// possible answer arrays
+// possible answer array variable
 
 var answerOneArray = [
     "strings",
     "booleans",
     "alerts",
     "numbers"
-]
+];
 
 var answerTwoArray = [
     "double or single quotation marks",
     "angle brackets",
     "curly braces",
     "strings can just be written as they are without being enclosed in anything"
-]
+];
 
 var answerThreeArray = [
     "true",
     "false"
-]
+];
+
+//for loops going through correct answers
+
+for (var i = 0; i < answerOneArray.length; i++) {
+    console.log(answerOneArray[i]);
+    //Do something
+}
+
 // correct answer array to compare with user input
 
 // copy/pasted and edited timer from \UPENN-VIRT-FSF-FT-07-2022-U-LOLC\04-Web-APIs\01-Activities\09-Ins_Timers-Intervals\script.js
@@ -46,6 +54,8 @@ function setTime() {
     }, 1000);
 }
 setTime();
+
+
 // can maybe use this from C:\Users\spenc\Desktop\Bootcamp\UPENN-VIRT-FSF-FT-07-2022-U-LOLC\04-Web-APIs\01-Activities\18-Stu_Event-Bubbling\Solved\index.html
 
 // //  Selects carousel element
