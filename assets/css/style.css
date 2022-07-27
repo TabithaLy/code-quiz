@@ -25,20 +25,10 @@ body {
     padding-bottom: 40px;
 }
   
-img {
-    margin: 0 auto;
-}
-  
-.prev {
+
+.answer {
     text-align: center;
-    width: 100px;
-    height: 30px
-}
-  
-.next {
-    text-align: center;
-    width: 100px;
-    height: 30px;
+    font-size: 100%;
 }
   
 .wrapper {
