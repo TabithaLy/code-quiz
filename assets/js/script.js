@@ -6,7 +6,7 @@ var questionArray = [
     "String values must be enclosed in:",
     "An if statement must always be followed by and else in JavaScript.",
 ];
-// possible answer array variable
+// possible answers array variables
 
 var answerOneArray = [
     "strings",
@@ -27,18 +27,68 @@ var answerThreeArray = [
     "false",
 ];
 
-document.getElementById("qOne").textContent = questionArray[0];
-for (let i = 0; i <= answerOneArray.length; i++) {
-    console.log(answerOneArray[i]);
+var correctAnswers = [
+    "alerts",
+    "double or single quotation marks",
+    "false",
+]
+var answerOneA = document.getElementById("answer-one-a");
+var answerOneB = document.getElementById("answer-one-b");
+var answerOneC = document.getElementById("answer-one-c");
+var answerOneD = document.getElementById("answer-one-d");
+var answerTwoA = document.getElementById("answer-two-a");
+var answerTwoB = document.getElementById("answer-two-b");
+var answerTwoC = document.getElementById("answer-two-c");
+var answerTwoD = document.getElementById("answer-two-d");
+var answerThreeT = document.getElementById("answer-three-t");
+var answerThreeF = document.getElementById("answer-three-f");
+
+var carousel = document.querySelector(".carousel-box");
+var answer = carousel.querySelector(".answer");
+var index = 0;
+var currentQuestion;
+
+function navigate(direction) {
+  index = index + direction;
+  if (index < 0) { 
+    index = answer.length - 1; 
+  } else if (index > answer.length - 1) { 
+    index = 0;
+  }
+  currentQuestion = answer[index];
+  
 }
-document.getElementById("qTwo").textContent = questionArray[1];
-for (let j = 0; j <= answerTwoArray.length; j++) {
-    console.log(answerTwoArray[j]);
-}
-document.getElementById("qThree").textContent = questionArray[2];
-for (let k = 0; k <= answerThreeArray.length; k++) {
-    console.log(answerThreeArray[k]);
-}
+
+answer.addEventListener("click", function(event) {
+  // Stops event from bubbling up and new window opening
+  event.stopPropagation();
+
+  navigate(1);
+});
+
+document.getElementById("q-one").textContent = questionArray[0];
+document.getElementById("answer-one-a").textContent = answerOneArray[0];
+document.getElementById("answer-one-b").textContent = answerOneArray[1];
+document.getElementById("answer-one-c").textContent = answerOneArray[2];
+document.getElementById("answer-one-d").textContent = answerOneArray[3];
+// for (let i = 0; i <= answerOneArray.length; i++) {
+//     //answerOneArray.textContent = answerOneArray[i];
+//     console.log(answerOneArray[i]);
+// }
+document.getElementById("q-two").textContent = questionArray[1];
+document.getElementById("answer-two-a").textContent = answerTwoArray[0];
+document.getElementById("answer-two-b").textContent = answerTwoArray[1];
+document.getElementById("answer-two-c").textContent = answerTwoArray[2];
+document.getElementById("answer-two-d").textContent = answerTwoArray[3];
+// for (let j = 0; j <= answerTwoArray.length; j++) {
+//     console.log(answerTwoArray[j]);
+// }
+document.getElementById("q-three").textContent = questionArray[2];
+document.getElementById("answer-three-t").textContent = answerThreeArray[0];
+document.getElementById("answer-three-f").textContent = answerThreeArray[1];
+// for (let k = 0; k <= answerThreeArray.length; k++) {
+//     console.log(answerThreeArray[k]);
+// }
 
 // correct answer array to compare with user input
 
@@ -61,57 +111,3 @@ function setTime() {
 }
 setTime();
 
-
-// can maybe use this from C:\Users\spenc\Desktop\Bootcamp\UPENN-VIRT-FSF-FT-07-2022-U-LOLC\04-Web-APIs\01-Activities\18-Stu_Event-Bubbling\Solved\index.html
-
-// //  Selects carousel element
-// var carousel = document.querySelector(".carouselbox");
-
-// // Selects buttons using their parent carousel element
-// var next = carousel.querySelector(".next");
-// var prev = carousel.querySelector(".prev");
-// var index = 0;
-// var currentImage;
-
-// var images = [
-//   "https://picsum.photos/300/200",
-//   "https://picsum.photos/300/201",
-//   "https://picsum.photos/300/202",
-//   "https://picsum.photos/300/203"
-// ];
-
-// carousel.style.backgroundImage = "url('https://picsum.photos/300/200')";
-
-// function navigate(direction) {
-//   index = index + direction;
-//   if (index < 0) { 
-//     index = images.length - 1; 
-//   } else if (index > images.length - 1) { 
-//     index = 0;
-//   }
-//   currentImage = images[index];
-//   carousel.style.backgroundImage = "url('" + currentImage + "')";
-// }
-
-// // Clicking on image opens a new window containing the image
-// carousel.addEventListener("click", function() {
-//   window.location.href = images[index];
-// });
-
-// // Clicking on next button displays next image in carousel
-// next.addEventListener("click", function(event) {
-//   // Stops event from bubbling up and new window opening
-//   event.stopPropagation();
-
-//   navigate(1);
-// });
-
-// // Clicking previous displays previous image in carousel
-// prev.addEventListener("click", function(event) {
-//   // Event bubbling would occur and a new window would open if we did not include the following line of code.
-//   event.stopPropagation();
-
-//   navigate(-1);
-// });
-
-// navigate(0);

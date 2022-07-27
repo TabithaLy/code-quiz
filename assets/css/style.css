@@ -1,7 +1,8 @@
-body {
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    margin: 2em;
-    background-color: #eff5f8;
+:root {
+    background-color: white;
+    color: black;
+    text-align: centr;
+    font-size: larger;
 }
   
 .container {
