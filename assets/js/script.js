@@ -1,5 +1,5 @@
 // carousel quiz
-// var answer = querySelectorAll(".answer");
+
 // question array
 var questionArray = [
     "Commonly used data types do not include?",
@@ -45,28 +45,28 @@ var answerThreeF = document.getElementById("answer-three-f");
 
 // pasted ln 47-69 as starter from UPENN-VIRT-FSF-FT-07-2022-U-LOLC\04-Web-APIs\01-Activities\18-Stu_Event-Bubbling\Solved\index.html
 // haven't  really used it yet
-var carousel = document.querySelector(".carousel-box");
-var answer = carousel.querySelector(".answer");
-var index = 0;
-var currentQuestion;
+// var carousel = document.querySelector(".carousel-box");
+// var answer = carousel.querySelector(".answer");
+// var index = 0;
+// var currentQuestion;
 
-function navigate(direction) {
-  index = index + direction;
-  if (index < 0) { 
-    index = answer.length - 1; 
-  } else if (index > answer.length - 1) { 
-    index = 0;
-  }
-  currentQuestion = answer[index];
+// function navigate(direction) {
+//   index = index + direction;
+//   if (index < 0) { 
+//     index = answer.length - 1; 
+//   } else if (index > answer.length - 1) { 
+//     index = 0;
+//   }
+//   currentQuestion = answer[index];
   
-}
+// }
 
-answer.addEventListener("click", function(event) {
-  // Stops event from bubbling up and new window opening
-  event.stopPropagation();
+// answer.addEventListener("click", function(event) {
+//   // Stops event from bubbling up and new window opening
+//   event.stopPropagation();
 
-  navigate(1);
-});
+//   navigate(1);
+// });
 
 document.getElementById("q-one").textContent = questionArray[0];
 document.getElementById("answer-one-a").textContent = answerOneArray[0];
